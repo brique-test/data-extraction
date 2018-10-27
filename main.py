@@ -3,11 +3,12 @@ import pandas as pd
 
 
 def calculate_values(df):
-    print(df.max())
-    print(df.min())
-    print(df.mean())
-    print(df.std())
-    print(df.median())
+    print(f'\nTotal number of rows: {df.shape[0]}\n')
+    print(f'\nMax value of each columns:\n{df.max()}\n')
+    print(f'\nMin value of each columns:\n{df.min()}\n')
+    print(f'\nAverage value of each columns:\n{df.mean()}\n')
+    print(f'\nStandard deviation value of each columns:\n{df.std()}\n')
+    print(f'\nMedian value of each columns:\n{df.median()}\n')
 
 
 if __name__ == '__main__':
